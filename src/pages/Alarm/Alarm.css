@@ -1,0 +1,57 @@
+.alarmContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: black;
+  width: 100vw;
+}
+
+.alarmText {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
+  font-weight: 200;
+  margin-top: 1rem;
+}
+
+.buttonWrapper {
+  position: absolute;
+  bottom: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.settimerBtn {
+  background-color: transparent;
+  padding: 0.7rem 0.8rem;
+  letter-spacing: 0.07rem;
+  border: 1px solid grey;
+  border-radius: 5px;
+  color: rgb(164, 161, 161);
+  cursor: pointer;
+}
+
+.alarmImg {
+  animation: shakeRotate 0.7s infinite;
+}
+
+@keyframes shakeRotate {
+  0% {
+    transform: rotate(0) translate(0);
+  }
+  25% {
+    transform: rotate(5deg) translate(-5px, 0);
+  }
+  50% {
+    transform: rotate(-5deg) translate(5px, 0);
+  }
+  75% {
+    transform: rotate(5deg) translate(-5px, 0);
+  }
+  100% {
+    transform: rotate(0) translate(0);
+  }
+}

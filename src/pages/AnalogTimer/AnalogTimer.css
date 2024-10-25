@@ -1,0 +1,60 @@
+.analog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.analogContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.analogClock {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.analogFace {
+  width: 100%;
+  height: auto;
+}
+
+.analogHand {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform-origin: 50% 100%; /* Rotera runt mitten längst ner på visaren */
+}
+
+.analogMinuteHand {
+  width: 4px;
+  height: 40%;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.analogSecondHand {
+  width: 2px;
+  height: 40%;
+  background-color: grey;
+  border-radius: 2px;
+}
+
+/* Mittpunkten på klockan */
+.analogHand::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

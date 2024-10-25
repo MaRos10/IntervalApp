@@ -1,0 +1,22 @@
+.digital {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.digitalContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.digitalClock {
+  font-size: 4rem;
+  font-weight: 500;
+  letter-spacing: 0.3rem;
+  min-width: 8rem;
+}

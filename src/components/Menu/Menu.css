@@ -1,0 +1,51 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.menuToggle {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.menuIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #222222e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.menuItem {
+  margin: 1.5rem 0;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 0.15rem;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+  cursor: pointer;
+}
