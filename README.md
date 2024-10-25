@@ -12,8 +12,6 @@ Detta är en **Timer App** som är byggd med React och använder sig av bibliote
 - **Pausläge:** När ett intervall slutar och pausläget är aktiverat, skickas användaren till en pausvy i fem minuter innan intervallet börjar om. Användaren har också möjlighet att avbryta pausen och skickas då tillbaka till ett nytt intervall
 - **Alarmsida:** Om varken intervall eller paus är aktiverat, skickas användaren till en alarmvy
 
-## Teknisk översikt
-
 ### Stack
 
 - **Frontend:** React.js
