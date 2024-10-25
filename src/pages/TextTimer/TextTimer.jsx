@@ -82,11 +82,11 @@ export default function TextTimer() {
       setTime(timeToWords(minutes, seconds));
     };
 
-    // Lägger till en lyssnare för secondsUpdated-eventet som anropar updateTimerText
+    // Lägger till eventlistener för secondsUpdated-eventet som anropar updateTimerText
     timer.addEventListener("secondsUpdated", updateTimerText);
     updateTimerText();
 
-    // Rensa eventlyssnare
+    // Rensa eventlistener
     return () => {
       timer.removeEventListener("secondsUpdated", updateTimerText);
     };
