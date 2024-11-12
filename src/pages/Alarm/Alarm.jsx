@@ -8,7 +8,7 @@ export default function Alarm() {
 
   const setNewTimer = () => {
     setTimeout(() => {
-      navigate("/setTimer");
+      navigate("/intervalapp/setTimer");
     }, 300);
   };
 
