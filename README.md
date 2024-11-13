@@ -17,3 +17,7 @@ Detta är en **Timer App** som är byggd med React och använder sig av bibliote
 - **Frontend:** React.js
 - **State management:** Context API
 - **Timer-bibliotek:** [`easy-timer.js`](https://albert-gonzalez.github.io/easytimer.js/)
+
+<br>  
+
+För att testa appen, [tryck här](https://maros10.github.io/IntervalApp/)
