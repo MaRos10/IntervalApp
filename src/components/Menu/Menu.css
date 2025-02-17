@@ -1,7 +1,7 @@
 .menu {
   /* position: fixed; */
   position: absolute;
-  top: 20px;
+  top: 0px;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -20,6 +20,7 @@
 .menuIcon {
   width: 30px;
   height: 30px;
+  margin-top: 2rem;
 }
 
 .menuOverlay {
