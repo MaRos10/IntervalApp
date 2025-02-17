@@ -17,14 +17,14 @@ export function TimerProvider({ children }) {
   const targetAchievedHandler = () => {
     if (isIntervalEnabled) {
       if (isPauseEnabled) {
-        navigate("/intervalapp/pause");
+        navigate("/pause");
         pauseTimer.start({ countdown: true, startValues: { minutes: 5 } }); // Starta paustimer
       } else {
         // om !isPauseEnabled - fortsätt med intervall utan paus
         timer.start({ countdown: true, startValues: { minutes } });
       }
     } else {
-      navigate("/intervalapp/alarm");
+      navigate("/alarm");
     }
   };
 

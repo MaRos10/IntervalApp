@@ -10,9 +10,9 @@ export default function Menu() {
   const navigate = useNavigate();
 
   const menuItems = [
-    { text: "Analog Timer", path: "/intervalapp/analogTimer", delay: 0.1 },
-    { text: "Digital Timer", path: "/intervalapp/digitalTimer", delay: 0.2 },
-    { text: "Text Timer", path: "/intervalapp/textTimer", delay: 0.3 },
+    { text: "Analog Timer", path: "/analogTimer", delay: 0.1 },
+    { text: "Digital Timer", path: "/digitalTimer", delay: 0.2 },
+    { text: "Text Timer", path: "/textTimer", delay: 0.3 },
   ];
 
   const handleNavigate = (path) => {

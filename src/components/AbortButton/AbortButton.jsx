@@ -11,7 +11,7 @@ export default function AbortButton() {
   const handleAbort = () => {
     setTimeout(() => {
       stopTimer();
-      navigate("/intervalapp/setTimer");
+      navigate("/setTimer");
     }, 300);
   };
 

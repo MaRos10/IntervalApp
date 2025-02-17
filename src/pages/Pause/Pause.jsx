@@ -31,7 +31,7 @@ export default function Pause() {
     const handleTargetAchieved = () => {
       setIsPauseEnabled(false);
       startTimer(minutes, isIntervalEnabled, true); // Starta nytt intervall
-      navigate("/intervalapp/analogTimer");
+      navigate("/analogTimer");
     };
 
     // targetAchieved körs när paustimer når sitt mål
@@ -57,7 +57,7 @@ export default function Pause() {
       pauseTimer.stop();
       setIsPauseEnabled(false);
       startTimer(minutes, isIntervalEnabled, true);
-      navigate("/intervalapp/analogTimer");
+      navigate("/analogTimer");
     }, 300);
   };
 

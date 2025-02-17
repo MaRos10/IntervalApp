@@ -8,7 +8,7 @@ export default function Loading() {
 
   const handleClick = () => {
     setTimeout(() => {
-      navigate("/intervalapp/setTimer");
+      navigate("/setTimer");
     }, 300);
   };
 

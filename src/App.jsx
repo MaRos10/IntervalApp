@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { TimerProvider } from "./components/TimerContext";
 import "./index.css";
 import Loading from "./pages/Loading/Loading";
@@ -17,19 +17,13 @@ function App() {
           <Router>
             <TimerProvider>
               <Routes>
-                <Route path="/intervalapp" element={<Loading />} />
-                <Route path="/intervalapp/setTimer" element={<SetTimer />} />
-                <Route
-                  path="/intervalapp/analogTimer"
-                  element={<AnalogTimer />}
-                />
-                <Route
-                  path="/intervalapp/digitalTimer"
-                  element={<DigitalTimer />}
-                />
-                <Route path="/intervalapp/textTimer" element={<TextTimer />} />
-                <Route path="/intervalapp/alarm" element={<Alarm />} />
-                <Route path="/intervalapp/pause" element={<Pause />} />
+                <Route path="/" element={<Loading />} />
+                <Route path="/setTimer" element={<SetTimer />} />
+                <Route path="/analogTimer" element={<AnalogTimer />} />
+                <Route path="/digitalTimer" element={<DigitalTimer />} />
+                <Route path="/textTimer" element={<TextTimer />} />
+                <Route path="/alarm" element={<Alarm />} />
+                <Route path="/pause" element={<Pause />} />
               </Routes>
             </TimerProvider>
           </Router>

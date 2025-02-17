@@ -18,7 +18,7 @@ export default function SetTimer() {
     setTimeout(() => {
       if (minutes > 0) {
         startTimer(minutes, isIntervalEnabled, isPauseEnabled);
-        navigate("/intervalapp/analogTimer");
+        navigate("/analogTimer");
       }
     }, 300);
   };
