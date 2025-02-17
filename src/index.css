@@ -47,3 +47,9 @@ body {
     box-shadow: none;
   }
 }
+
+@media (min-width: 1024px) {
+  .mobileFrame {
+    margin: 15rem 0rem 3rem 0rem;
+  }
+}
