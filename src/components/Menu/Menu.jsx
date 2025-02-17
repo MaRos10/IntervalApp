@@ -38,12 +38,14 @@ export default function Menu() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
+            onClick={() => setIsOpen(false)}
           >
             <motion.ul
               className="menuList"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
+              onClick={(e) => e.stopPropagation()}
             >
               {menuItems.map((item, id) => (
                 <motion.li
