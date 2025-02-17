@@ -15,3 +15,35 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.mobileFrame {
+  width: 375px;
+  height: 812px;
+  border: 10px solid rgb(90, 90, 90);
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  background: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mobileContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 678px) {
+  .mobileFrame {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}

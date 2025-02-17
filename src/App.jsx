@@ -12,22 +12,29 @@ import Pause from "./pages/Pause/Pause";
 function App() {
   return (
     <>
-      <Router>
-        <TimerProvider>
-          <Routes>
-            <Route path="/intervalapp" element={<Loading />} />
-            <Route path="/intervalapp/setTimer" element={<SetTimer />} />
-            <Route path="/intervalapp/analogTimer" element={<AnalogTimer />} />
-            <Route
-              path="/intervalapp/digitalTimer"
-              element={<DigitalTimer />}
-            />
-            <Route path="/intervalapp/textTimer" element={<TextTimer />} />
-            <Route path="/intervalapp/alarm" element={<Alarm />} />
-            <Route path="/intervalapp/pause" element={<Pause />} />
-          </Routes>
-        </TimerProvider>
-      </Router>
+      <div className="mobileFrame">
+        <div className="mobileContent">
+          <Router>
+            <TimerProvider>
+              <Routes>
+                <Route path="/intervalapp" element={<Loading />} />
+                <Route path="/intervalapp/setTimer" element={<SetTimer />} />
+                <Route
+                  path="/intervalapp/analogTimer"
+                  element={<AnalogTimer />}
+                />
+                <Route
+                  path="/intervalapp/digitalTimer"
+                  element={<DigitalTimer />}
+                />
+                <Route path="/intervalapp/textTimer" element={<TextTimer />} />
+                <Route path="/intervalapp/alarm" element={<Alarm />} />
+                <Route path="/intervalapp/pause" element={<Pause />} />
+              </Routes>
+            </TimerProvider>
+          </Router>
+        </div>
+      </div>
     </>
   );
 }
